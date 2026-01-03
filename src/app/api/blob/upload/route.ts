@@ -12,7 +12,7 @@ export async function POST(req: Request) {
       { status: 403 }
     );
   }
-  
+
   try {
     const formData = await req.formData();
     const files = formData.getAll("files") as File[];
